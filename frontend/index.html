@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Campus Buddy – Chat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Optional: clean modern font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <div class="app-shell">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo-circle">CB</div>
+        <div class="logo-text">
+          <div class="logo-title">Campus Buddy</div>
+          <div class="logo-subtitle">Student AI Companion</div>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Chats</div>
+        <ul class="nav-list">
+          <li class="nav-item nav-item-active">
+            <span class="nav-dot"></span>
+            <span>Today’s Plan</span>
+          </li>
+          <li class="nav-item">
+            <span class="nav-dot nav-dot-muted"></span>
+            <span>Assignments & Deadlines</span>
+          </li>
+          <li class="nav-item">
+            <span class="nav-dot nav-dot-muted"></span>
+            <span>Exam Prep</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <div class="sidebar-section-title">Shortcuts</div>
+        <ul class="nav-list">
+          <li class="nav-item small">
+            📅 Today’s classes
+          </li>
+          <li class="nav-item small">
+            ✅ Upcoming assignments
+          </li>
+          <li class="nav-item small">
+            🧠 Exam revision plan
+          </li>
+        </ul>
+      </div>
+
+      
+        
+    </aside>
+
+    <!-- Main Chat Area -->
+    <main class="main">
+      <!-- Top bar -->
+      <header class="topbar">
+        <div class="topbar-left">
+          <div class="chat-title">Today’s Study Session</div>
+          <div class="chat-subtitle">
+            Plan your classes, assignments & get some motivation 🎧
+          </div>
+        </div>
+        <div class="topbar-right">
+          <div class="user-pill">
+            <div class="user-avatar">A</div>
+            <div class="user-meta">
+              <div class="user-name">Alex</div>
+              <div class="user-role">Student</div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Chat window -->
+      <section class="chat-container" id="chat-container">
+        <!-- Messages will be injected here by JS -->
+      </section>
+
+      <!-- Input area -->
+      <footer class="input-wrapper">
+        <div class="input-inner">
+          <input
+            id="chat-input"
+            type="text"
+            placeholder="Ask Campus Buddy anything about your classes, exams or schedule..."
+            autocomplete="off"
+          />
+          <div class="input-actions">
+            <button id="suggest-btn" type="button" class="ghost-btn">
+              ✨ Suggest prompt
+            </button>
+            <button id="send-btn" type="button" class="primary-btn">
+              Send
+            </button>
+          </div>
+        </div>
+        <div class="input-hint">
+          Tip: Try “Plan my evening study schedule” or “Give me some motivation, I’m stressed” 💬
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
